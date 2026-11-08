@@ -1,0 +1,46 @@
+{
+  "entry_sha256": "ca54a18a73a7d760d644ca4eb2c3b20678f88dfdbcfa26a62dcd3de617b31af4",
+  "first_frame_sha256": "1e71abf29876f248088a11211a350ed3d26a0c68aa34f6e45738771eb2d45a22",
+  "kernel_sha256": {
+    "h3_nine_mha_bf16_c0.so": "76816fafaaffac2c849dc44f1f75231342193b62e539caeea8c40dc250c624b1",
+    "h3_nine_mha_bf16_c1.so": "2f5122bbc62435d26d763c39c2be59d6fc333610f7516a99df3c50d6a5b7ce94"
+  },
+  "plugin_sha256": "b7917b7023bce1aa38bd4ef5de3fef200614974cf5af43d7707239dbc63bcf59",
+  "command": [
+    "/public/home/aclsylqidf/infinifabric-users/users/693321cff7a04912a0ec9b14718656cf/h3/envs/py311-20261105-v1/bin/python",
+    "-u",
+    "/public/home/aclsylqidf/infinifabric-users/users/693321cff7a04912a0ec9b14718656cf/h3/runs/cpu-py-src-cc180812/InfiniLM/examples/minimax_h3.py",
+    "fl2va",
+    "--model-path=/public/home/aclsylqidf/shared/MiniMax-H3",
+    "--first-frame=/public/home/aclsylqidf/infinifabric-users/users/693321cff7a04912a0ec9b14718656cf/h3/\u8f93\u5165\u56fe\u7247.jpg",
+    "--output=/public/home/aclsylqidf/infinifabric-users/users/693321cff7a04912a0ec9b14718656cf/h3/runs/nine-fl2va-direct-20261107-123705/infinilm_fl2va.mp4",
+    "--text=A dog falls asleep",
+    "--seed=42",
+    "--steps=50",
+    "--num-frames=124",
+    "--gpus=0,1,2,3,4,5,6,7"
+  ],
+  "video": {
+    "width": 768,
+    "height": 928,
+    "fps": 24.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 2,
+    "audio_sample_rate": 32000,
+    "decoded_frames": 124,
+    "sha256": "3314c2fe3c7c99137db4d99a56ccf6d5170c1142eb2d4369839625bc7496c52c"
+  },
+  "scope": "FL2VA generation and media verification",
+  "generation_exit_code": 0,
+  "observed_nine_devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

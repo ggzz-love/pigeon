@@ -1,0 +1,237 @@
+{
+  "scope": "upstream Nine MHA HIP backend validation; no model integration claim",
+  "started": 1794053752.8043292,
+  "passed": true,
+  "wheel_sha256": {
+    "ninetoothed-0.25.0-py3-none-any.whl": "c6628e512c458801d6387ee5c658ab9fbe1cf3a906739337cb85fbe567cdfefb",
+    "numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+  },
+  "original_aot_sha256": "7028755b034befd3f3a9c00d02931cc555f50730d0594de572b3edcd629494ca",
+  "candidate_aot_sha256": "0ba01d082c2f814c1ab85c6ace77994b562cd99bbaa4819bff847a8a11d664bc",
+  "modes": {
+    "aot": {
+      "exit_code": 0,
+      "result": {
+        "scope": "standalone upstream Nine flash attention; no model claim",
+        "passed": true,
+        "mode": "aot",
+        "cases": [
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              2,
+              2,
+              17,
+              17,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              4,
+              2,
+              65,
+              65,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              2,
+              4,
+              2,
+              129,
+              97,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              2,
+              2,
+              257,
+              257,
+              128
+            ],
+            "max_abs_error": 0.00390625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              2,
+              2,
+              17,
+              17,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              4,
+              2,
+              65,
+              65,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              2,
+              4,
+              2,
+              129,
+              97,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              2,
+              2,
+              257,
+              257,
+              128
+            ],
+            "max_abs_error": 0.015625
+          }
+        ],
+        "generated_files": {
+          "h3_nine_mha_bf16_c1.so": "2f5122bbc62435d26d763c39c2be59d6fc333610f7516a99df3c50d6a5b7ce94",
+          "h3_nine_mha_bf16_c1.h": "6777254df6354263a2ee6eac77c644134b67ff457dd38796a837b5084ed03cf9",
+          "h3_nine_mha_bf16_c1.cpp": "ead8e967224d2885d190423d4736da61c9d75efc6d4aa0b0ab571d6a33c8a579",
+          "h3_nine_mha_bf16_c1.s_3_3_3_0_3_n_n_3_n_n.cpp": "75f279e2ff1eb7bbd9fc8d57293748b0d1075c96bbd269289cc6eeef8f1a00c8",
+          "h3_nine_mha_bf16_c0.so": "76816fafaaffac2c849dc44f1f75231342193b62e539caeea8c40dc250c624b1",
+          "h3_nine_mha_bf16_c0.h": "b638e14b1ea59c3304b9a59a38e1cfb1355afe9c758df697ede409b0bfa87cf9",
+          "h3_nine_mha_bf16_c0.cpp": "37cd0ceacdeb0ed4b802005699ee3fdd9cdf86e8f28a86e6d6e829e82868c0d4",
+          "h3_nine_mha_bf16_c0.s_3_3_3_0_3_n_n_3_n_n.cpp": "ecd8043257a5457ebf177a697ca2248842e5d624afb76da5afecb6f1e7ee8dbb"
+        }
+      }
+    },
+    "jit": {
+      "exit_code": 0,
+      "result": {
+        "scope": "standalone upstream Nine flash attention; no model claim",
+        "passed": true,
+        "mode": "jit",
+        "cases": [
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              2,
+              2,
+              17,
+              17,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              4,
+              2,
+              65,
+              65,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              2,
+              4,
+              2,
+              129,
+              97,
+              128
+            ],
+            "max_abs_error": 0.0078125
+          },
+          {
+            "causal": 0,
+            "shape": [
+              1,
+              2,
+              2,
+              257,
+              257,
+              128
+            ],
+            "max_abs_error": 0.00390625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              2,
+              2,
+              17,
+              17,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              4,
+              2,
+              65,
+              65,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              2,
+              4,
+              2,
+              129,
+              97,
+              128
+            ],
+            "max_abs_error": 0.015625
+          },
+          {
+            "causal": 1,
+            "shape": [
+              1,
+              2,
+              2,
+              257,
+              257,
+              128
+            ],
+            "max_abs_error": 0.015625
+          }
+        ],
+        "generated_files": {}
+      }
+    }
+  },
+  "ended": 1794054052.7884417
+}
